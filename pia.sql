@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 4.8.4
+-- version 4.7.4
 -- https://www.phpmyadmin.net/
 --
 -- Hôte : 127.0.0.1:3306
--- Généré le :  jeu. 07 fév. 2019 à 12:10
--- Version du serveur :  5.7.24
--- Version de PHP :  7.2.14
+-- Généré le :  lun. 25 fév. 2019 à 11:09
+-- Version du serveur :  5.7.19
+-- Version de PHP :  5.6.31
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET AUTOCOMMIT = 0;
@@ -33,7 +33,7 @@ CREATE TABLE IF NOT EXISTS `messages` (
   `pseudo` varchar(535) NOT NULL,
   `object` varchar(535) NOT NULL,
   `email` varchar(535) NOT NULL,
-  `message` text NOT NULL
+  `message` longtext NOT NULL
 ) ENGINE=MyISAM DEFAULT CHARSET=latin1;
 
 --
@@ -41,12 +41,7 @@ CREATE TABLE IF NOT EXISTS `messages` (
 --
 
 INSERT INTO `messages` (`pseudo`, `object`, `email`, `message`) VALUES
-('Rocail', 'Coucou !', 'rocaile3@gmail.com', 'ça fonctionne :3'),
-('Rocail', 'Coucou !', 'rocaile3@gmail.com', 'ça fonctionne :3'),
-('Rocail', 'Coucou !', 'rocaile3@gmail.com', 'ça fonctionne :3'),
-('Rocail', 'Coucou !', 'rocaile3@gmail.com', 'ça fonctionne :3'),
-('Rocail', 'Coucou !', 'rocaile3@gmail.com', 'ça fonctionne :3'),
-('Rocail', 'Bonjour', 'rocaile3@gmail.com', 'C\'est Rocail :3');
+('Priscillia', 'Test', 'pia@pia.com', 'Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?');
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
