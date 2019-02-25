@@ -1,0 +1,90 @@
+@-webkit-keyframes rotating {
+    0%{
+        -webkit-transform: rotate(0deg);
+    }
+    100%{
+        -webkit-transform: rotate(360deg);
+    }
+}
+
+
+
+
+@-webkit-keyframes montehaut {
+  from {
+-webkit-transform: translateY(0%);
+
+  }
+
+50%{
+  -webkit-transform: translateY(10%);
+}
+
+  to{
+-webkit-transform: translateY(+0%);
+
+  }
+
+}
+
+@-webkit-keyframes montehautdeux {
+  from {
+-webkit-transform: translateY(0%);
+
+  }
+
+50%{
+  -webkit-transform: translateY(5%);
+}
+
+  to{
+-webkit-transform: translateY(+0%);
+
+  }
+
+}
+
+
+@-webkit-keyframes montehaut3 {
+  from {
+-webkit-transform: translateY(0%);
+
+  }
+
+50%{
+  -webkit-transform: translateY(10%);
+}
+
+  to{
+-webkit-transform: translateY(+0%);
+
+  }
+
+}
+
+
+#nuage_gros
+{
+  animation: montehautdeux 1.5s ease-in-out infinite;
+}
+#nuage_moyen
+{
+  animation: montehautdeux 1s ease-in-out infinite;
+}
+#nuage_petit
+{
+  animation: montehaut3 1.2s ease-in-out infinite;
+}
+#bateau
+{
+  animation: montehaut 1s ease-in-out infinite;
+}
+
+
+
+
+#monde
+{
+animation: rotating 10s infinite linear;
+-webkit-transform-origin: 45% 110%;
+}
