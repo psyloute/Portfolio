@@ -2,11 +2,12 @@
 // On vérifie que tous les champs du formulaire sont bien remplis
 if (isset($_POST['submit']) && isset($_POST['name']) && isset($_POST['object']) && isset($_POST['email']) && isset($_POST['message'])) {
 
-    // On récupère chacun des champs du formulaire
-    $name = $_POST['name'];
-    $object = $_POST['object'];
-    $email = $_POST['email'];
-    $message = $_POST['message'];
+    // On récupère chacun des champs du formulaire en se protegeant contre les failles XSS avec htmlspecialchars()
+
+    $name = htmlspecialchars($_POST['name']);
+    $object = htmlspecialchars($_POST['object']);
+    $email = htmlspecialchars($_POST['email']);
+    $message = htmlspecialchars($_POST['message']);
 
     // On se connecte à la base de données MySQL
     try {
@@ -19,8 +20,8 @@ if (isset($_POST['submit']) && isset($_POST['name']) && isset($_POST['object']) 
 
     echo 'Envoi du message... ';
 
-    // On envoie les données à la base de données. On fait ça en 2 temps pour éviter les failles SQL (injection SQL)
-    // D'abord on prépare la requete, mais on met pas directement les vraies valeurs, on les nomme juste (avec le :).
+    // On envoie les données à la base de données. On fait ça en 2 temps pour éviter les failles SQL (injection SQL) :
+    // donc d'abord on prépare la requete, mais on met pas directement les vraies valeurs, on les nomme juste (avec le :).
     $req = $bdd->prepare('INSERT INTO messages(pseudo, object, email, message) VALUES (:name, :object, :email, :message)');
     // Ensuite, on envoie vraiment la requete, en précisant que tel paramètre a telle valeur.
     $res = $req->execute(array(
