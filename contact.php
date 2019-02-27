@@ -21,7 +21,8 @@ if (isset($_POST['submit']) && isset($_POST['name']) && isset($_POST['object']) 
     echo 'Envoi du message... ';
 
     // On envoie les données à la base de données. On fait ça en 2 temps pour éviter les failles SQL (injection SQL) :
-    // donc d'abord on prépare la requete, mais on met pas directement les vraies valeurs, on les nomme juste (avec le :).
+    // Donc d'abord on prépare la requete, mais on met pas directement les vraies valeurs, on les nomme juste (avec le :).
+
     $req = $bdd->prepare('INSERT INTO messages(pseudo, object, email, message) VALUES (:name, :object, :email, :message)');
     // Ensuite, on envoie vraiment la requete, en précisant que tel paramètre a telle valeur.
     $res = $req->execute(array(
