@@ -1,27 +1,27 @@
-// external js: isotope.pkgd.js
+// script js externe : isotope.pkgd.js
 
-// init Isotope
+// initialisation d'Isotope
 var $grid = $('.grid').isotope({
     itemSelector: '.color-shape'
   });
   
-  // store filter for each group
+  // filtre pour chaque groupe 
   var filters = {};
   
   $('.filters').on( 'click', '.button', function( event ) {
     var $button = $( event.currentTarget );
-    // get group key
+    //  key du groupe
     var $buttonGroup = $button.parents('.button-group');
     var filterGroup = $buttonGroup.attr('data-filter-group');
-    // set filter for group
+    // definir les filtres
     filters[ filterGroup ] = $button.attr('data-filter');
-    // combine filters
+    // combiner les filtres
     var filterValue = concatValues( filters );
-    // set filter for Isotope
+    // definir les filtre pour Isotope
     $grid.isotope({ filter: filterValue });
   });
   
-  // change is-checked class on buttons
+  // changer la class selon le bouton cliqué
   $('.button-group').each( function( i, buttonGroup ) {
     var $buttonGroup = $( buttonGroup );
     $buttonGroup.on( 'click', 'button', function( event ) {
@@ -31,7 +31,7 @@ var $grid = $('.grid').isotope({
     });
   });
     
-  // flatten object by concatting values
+  // concatenation des valeurs 
   function concatValues( obj ) {
     var value = '';
     for ( var prop in obj ) {
