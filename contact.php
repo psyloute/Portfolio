@@ -1,6 +1,6 @@
 <?php
 // On vérifie que tous les champs du formulaire sont bien remplis
-if (isset($_POST['submit']) && isset($_POST['name']) && isset($_POST['object']) && isset($_POST['email']) && isset($_POST['message'])) {
+if (!empty($_POST['submit']) && !empty($_POST['name']) && !empty($_POST['object']) && !empty($_POST['email']) && !empty($_POST['message'])) {
 
     // On récupère chacun des champs du formulaire en se protegeant contre les failles XSS avec htmlspecialchars()
 
