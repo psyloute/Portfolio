@@ -1,7 +1,7 @@
 /*!
  * Start Bootstrap - Agency v5.0.3 (https://startbootstrap.com/template-overviews/agency)
  * Copyright 2013-2018 Start Bootstrap */
- //Script natif de bootstrap pour le menu 
+ //Script natif de bootstrap pour le menu + l'effet de scroll lent
 
 ! function(o) {
     "use strict";
