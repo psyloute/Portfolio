@@ -29,12 +29,12 @@
 }(jQuery);
 
 
-// script qui fait que quand l'utilisateur descend la page de 20 pixel, le bouton "top" apparait  
+// script qui fait que quand l'utilisateur descend la page de 35 pixel, le bouton "top" apparait  
 
 window.onscroll = function() {scrollFunction()};
 
 function scrollFunction() {
-  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+  if (document.body.scrollTop > 35 || document.documentElement.scrollTop > 35) {
     document.getElementById("myBtn").style.display = "block";
   } else {
     document.getElementById("myBtn").style.display = "none";
