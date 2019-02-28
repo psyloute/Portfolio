@@ -10,18 +10,18 @@ var $grid = $('.grid').isotope({
   
   $('.filters').on( 'click', '.button', function( event ) {
     var $button = $( event.currentTarget );
-    //  key du groupe
+    //  clefs du groupe
     var $buttonGroup = $button.parents('.button-group');
     var filterGroup = $buttonGroup.attr('data-filter-group');
-    // definir les filtres
+    // on definit les filtres
     filters[ filterGroup ] = $button.attr('data-filter');
-    // combiner les filtres
+    // on les combines
     var filterValue = concatValues( filters );
-    // definir les filtre pour Isotope
+    // puis on definit ceux pour isotope
     $grid.isotope({ filter: filterValue });
   });
   
-  // changer la class selon le bouton cliqué
+  // pour changer la class selon le bouton cliqué
   $('.button-group').each( function( i, buttonGroup ) {
     var $buttonGroup = $( buttonGroup );
     $buttonGroup.on( 'click', 'button', function( event ) {
@@ -31,7 +31,7 @@ var $grid = $('.grid').isotope({
     });
   });
     
-  // concatenation des valeurs 
+  // puis concatenation des valeurs 
   function concatValues( obj ) {
     var value = '';
     for ( var prop in obj ) {
