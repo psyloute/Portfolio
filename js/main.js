@@ -1,7 +1,6 @@
-/*!
- * Start Bootstrap - Agency v5.0.3 (https://startbootstrap.com/template-overviews/agency)
- * Copyright 2013-2018 Start Bootstrap */
- //Script natif de bootstrap pour le menu + l'effet de scroll lent
+/* Start Bootstrap - Copyright 2013-2018 Start Bootstrap */
+
+ //Script natif de Bootstrap pour le menu + l'effet de scroll lent :
 
 ! function(o) {
     "use strict";
@@ -29,7 +28,7 @@
 }(jQuery);
 
 
-// script qui fait que quand l'utilisateur descend la page de 35 pixel, le bouton "top" apparait  
+// J'ai choisit de rajouter script qui fait apparaitre un bouton "top" quand l'utilisateur descend la page de 35 pixel
 
 window.onscroll = function() {scrollFunction()};
 
