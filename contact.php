@@ -21,8 +21,8 @@ if (!empty($_POST['submit']) && !empty($_POST['name']) && !empty($_POST['object'
     
     echo 'Envoi du message... ';
     
-    // On envoie les données à la base de données. On fait ça en 2 temps pour éviter les failles SQL (injection SQL) :
-    // Donc d'abord on prépare la requete, mais on met pas directement les vraies valeurs, on les nomme juste (avec le :).
+    // On utilise la methode PDO puis on envoie les données à la base de données. On fait ça en 2 temps (prepare et execute) pour éviter les injection SQL
+    // d'abord on prépare la requete, mais on met pas directement les vraies valeurs, on les nomme juste (avec le :)
     
     $req = $bdd->prepare('INSERT INTO messages(pseudo, object, email, message) VALUES (:name, :object, :email, :message)');
     // Ensuite, on envoie vraiment la requete, en précisant que tel paramètre a telle valeur.
