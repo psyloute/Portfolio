@@ -13,7 +13,7 @@ if (!empty($_POST['name']) && !empty($_POST['object']) && !empty($_POST['email']
     // On se connecte à la base de données MySQL
     try
     {
-        $bdd = new PDO('mysql:host=localhost;dbname=pia;charset=utf8', 'root', 'root');
+        $bdd = new PDO('mysql:host=localhost;dbname=pia;charset=utf8', 'root', '');
     }
     // Si la connexion échoue (try) on affiche le débuguage
     catch (Exception $e)
@@ -35,10 +35,10 @@ if (!empty($_POST['name']) && !empty($_POST['object']) && !empty($_POST['email']
         'message' => $message
     ));
 
+    // On redirige sur la page "contact.html" après 3 secondes
     header('Refresh: 3;URL=contact.html');
     echo "Votre message a bien été envoyé !";
-    // On redirige sur la page "contact.html"
-    //header("Location: contact.html");
+
 }
 else
 {
