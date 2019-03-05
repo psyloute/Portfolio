@@ -35,12 +35,12 @@ if (!empty($_POST['name']) && !empty($_POST['object']) && !empty($_POST['email']
         'message' => $message
     ));
 
-    // On redirige sur la page "contact.html" après 3 secondes
+    // On redirige sur la page "contact.html" après quelques secondes
     //en cas de succes : 
     header('Refresh: 3;URL=contact.html');
     echo "Votre message a bien été envoyé !";
-
 }
+
 else
 {
   // ou en cas d'erreur : 
