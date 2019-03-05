@@ -38,12 +38,13 @@ if (!empty($_POST['name']) && !empty($_POST['object']) && !empty($_POST['email']
     // On redirige sur la page "contact.html" après quelques secondes
     //en cas de succes : 
     header('Refresh: 3;URL=contact.html');
-    echo "Votre message a bien été envoyé !";
+    echo "<p>Votre message à bien été envoyé !</p>
+    <p>&nbsp;Redirection...</p>";
 }
 
 else
 {
   // ou en cas d'erreur : 
   header('Refresh: 2;URL=contact.html');
-  echo "Merci de remplir tous les champs du formulaire !";
+  echo "<p style=\"color:#bd1c1d; font-weight: 900; font-size:1.3rem;\">/!\&nbsp;Merci de remplir tous les champs du formulaire !&nbsp;/!\</p>";
 }
