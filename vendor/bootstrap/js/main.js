@@ -1,6 +1,6 @@
 /* Start Bootstrap - Copyright 2013-2019 Start Bootstrap */
 
- //Script natif du template pour l'effet de scroll lent et les petites fenêtres "ils m'ont fait confiance" 
+ //Script natif pour l'effet de scroll lent et les petites fenêtres "ils m'ont fait confiance" 
 
 ! function(o) {
     "use strict";
