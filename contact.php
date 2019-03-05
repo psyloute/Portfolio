@@ -13,7 +13,7 @@ if (!empty($_POST['name']) && !empty($_POST['object']) && !empty($_POST['email']
     // On se connecte à la base de données MySQL
     try
     {
-        $bdd = new PDO('mysql:host=localhost;dbname=pia;charset=utf8', 'root', '');
+        $bdd = new PDO('mysql:host=localhost;dbname=pia;charset=utf8', 'root', ''); //On aurait pû aussi mettre les identifiants de connexion à la bdd dans un fichier à part puis de faire un include.
     }
     // Si la connexion échoue (try) on affiche le débuguage
     catch (Exception $e)
