@@ -44,6 +44,6 @@ if (!empty($_POST['name']) && !empty($_POST['object']) && !empty($_POST['email']
 else
 {
   // ou en cas d'erreur : 
-  header('Refresh: 3;URL=contact.html');
-  echo "Veuillez remplir tous les champs du formulaire !";
+  header('Refresh: 2;URL=contact.html');
+  echo "Merci de remplir tous les champs du formulaire !";
 }
