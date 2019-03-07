@@ -1,4 +1,4 @@
-// Script qui va permettre a la date sur le copyright dans le footer de changer seule avec les années
+// Script qui va permettre à la date sur le copyright dans le footer de changer seule avec les années
 
 // Syntaxe qui permet de stocker la date :
 var LaDate = new Date();
