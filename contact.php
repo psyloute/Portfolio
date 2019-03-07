@@ -45,5 +45,5 @@ else
 {
   // ou en cas d'erreur : 
   header('Refresh: 2;URL=contact.html');
-  echo "<p style=\"color:#bd1c1d; font-weight: 900; font-size:1.3rem;\">/!\&nbsp;Merci de remplir tous les champs du formulaire !&nbsp;/!\</p>";
+  echo "<p>/!\&nbsp;Merci de remplir tous les champs du formulaire !&nbsp;/!\</p>";
 }
