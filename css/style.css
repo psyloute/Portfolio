@@ -826,6 +826,7 @@ h6
 /* =========================================== FOOTER =========================================== */
 /* =========================================== FOOTER =========================================== */
 /* =========================================== FOOTER =========================================== */
+
 footer
 {
 	padding:25px 0;
@@ -1021,8 +1022,7 @@ ul.social-buttons li a:active,ul.social-buttons li a:focus,ul.social-buttons li 
 	position: fixed;
 	bottom: 20px;
 	right: 30px;
-	z-index: 99;
-	/* Pour pas qu'il se chevauche */
+	z-index: 99; /* Pour pas qu'il se chevauche */
 	border: none;
 	outline: none;
 	background-color: #bd1c1d;

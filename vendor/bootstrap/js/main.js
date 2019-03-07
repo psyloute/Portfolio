@@ -1,6 +1,11 @@
-/* Start Bootstrap - Copyright 2013-2019 Start Bootstrap */
+/* Start Bootstrap - Copyright 2013-2019 Start Bootstrap 
+/*!
+ * Bootstrap v4.2.1 (https://getbootstrap.com/)
+ * Copyright 2011-2018 The Bootstrap Authors Agency
+ * Copyright 2011-2018 Twitter, Inc.*/
 
- //Script natif pour l'effet de scroll lent et les petites fenêtres "ils m'ont fait confiance" 
+
+//Script natif de bootstrap pour l'effet de scroll lent et les petites fenêtres (modal) "ils m'ont fait confiance" (que j'ai replacer aussi dans la page identité visuelle)
 
 ! function(o) {
     "use strict";
