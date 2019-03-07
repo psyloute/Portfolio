@@ -4,7 +4,6 @@ if (!empty($_POST['name']) && !empty($_POST['object']) && !empty($_POST['email']
 {
 
     // On récupère chacun des champs du formulaire en se protegeant contre les failles XSS avec htmlspecialchars()
-
     $name    = htmlspecialchars($_POST['name']);
     $object  = htmlspecialchars($_POST['object']);
     $email   = htmlspecialchars($_POST['email']);
