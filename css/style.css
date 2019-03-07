@@ -755,7 +755,7 @@ h6
 	font-style: italic;
 }
 
-@keyframes spaceboots
+@keyframes bip
 {
 	0%
 	{
@@ -814,9 +814,9 @@ h6
 
 }
 
-.biiip:hover,  .biiip:focus
+.biiip
 {
-	animation-name: spaceboots;
+	animation-name: bip;
 	animation-duration: 0.2s;
 	transform-origin:50% 50%;
 	animation-iteration-count: infinite;
