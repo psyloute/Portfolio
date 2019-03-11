@@ -1,4 +1,5 @@
-Je présente en tant que projet de fin de formation mon portfolio. J'ai choisis d'utiliser le framwork Bootstrap.
+Je présente en tant que projet de fin de formation mon portfolio professionnel. 
+J'ai choisis pour le faire d'utiliser le framwork Bootstrap.
 
 Pages couvrant les 5 languages :
 Html5 : index.html , print.html , siteweb.html , identitevisuelle.html , contact.html , mention.html 
